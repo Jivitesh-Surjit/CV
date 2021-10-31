@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>BIOMETRIC-EVM</title>
+  </head>
+  <body>
+    <center>
+      <h1><strong>Fingerprint Based Voting Machine with RFID as Alternative</strong></h1>
+      <p><em>Duration</em>- 3 Months</p>
+      <p><em>Author - <a href="contact.html">Jivitesh Surjit</a></em></p>
+
+      </center>
+      <hr size='3' >
+      <br>
+      <h3><em>ABSTRACT - </em></h3>
+      <br>
+      <p>The goal of this venture is to enhance the security overall performance in the Electronic Voting Machine (EVM) as
+        properly as to provide convenient access to forged the vote by the use of biometric based security system.
+        Biometrics refers to technologies that measure and analyzes human body characteristics for authentication purposes.
+         There are loads of techniques to keep away from fraudulence in balloting systems; however we are no longer capable
+          to eradicate it completely. Our project “Biometric based EVM” uses the fingerprints as the security system
+          for voting as the thumb effect of each and every man or woman is unique, it helps in minimizing the error.
+           The fingerprint module stores the fingerprint templates and with the help of arduino it checks illegal votes
+           and repetition of votes with correct coding. The system allows only authenticated voting than the existing
+           equipment as the person is identified based on his fingerprint which is unique to each individual.
+           As an alternative to the fingerprint security system for voting we have used Radio Frequency Identification
+           (RFID) cards which will be enrolled to the voters in case of any accident occurs with them that leads to loss of
+           finger prints or the hand itself. With this project the man power required is reduced with the reduction in the
+           time required for verification, voting and declaration of results. With this fingerprint based
+           Electronic Voting Machine (EVM) the elections ought to be made honest and free from rigging.</p>
+      <br>
+      <h3><em>INTRODUCTION - </em></h3>
+      <br>
+      <p>Biometrics refers to technologies that measure and analyzes human body characteristics. Among the quite a few
+         human fingerprints remain a very frequent identifier and the biometric approach of choice amongst regulation
+         enforcement as the thumb effect of each and every man or woman is unique, it helps in minimizing the error.
+          Biometrics is the automated measurement of physiological or behavioral characteristics of individuals.
+          Physiological characteristics include face, fingerprints, iris and retinal features, hand geometry, and ears.
+An EVM is designed with two units: the control unit and the balloting unit. These units are joined together by a cable.
+ The control unit of the EVM is kept with the presiding officer or the polling officer.
+ The balloting unit is kept within the voting compartment for electors to cast their votes.
+ This is done to ensure that the polling officer verifies your identity. With the EVM, instead of issuing a ballot paper,
+ the polling officer will press the Ballot Button which enables the voter to cast their vote. A list of candidate’s names
+  and/or symbols will be available on the machine with a blue button next to it. The voter can press the button next to the
+  candidate’s name they wish to vote for. An Electronic Voting Machine (EVM) is an electronic device used for recording votes
+   and no one can change the program once the controller is manufactured.
+The main drawback of this system is that, voter’s id checking process is manual hence possibilities of illegal voting by a
+ wrong candidate and also, possibility of multiple votes by same person. Currently the voting system in India is
+ experiencing issues due to pole rigging and duplicity of votes. In rural areas the dominant parties with the help of
+ other government officials try to control the voting and disrespect the unanimity of the voting process resulting in
+ monopoly of majority party. People with physical disabilities also are facing a lot of difficult in casting their votes
+  due to unavailability of any other way of enrollment. An advanced and secure way of vote enrollment and vote casting is
+   of prime importance which could be conducted with minimal man power and interference of any other officials and can be
+   efficient in securing already casted votes if anything goes astray.
+ To avoid this problem, in our proposed model we are using the fingerprint as an authentication medium for the voters and
+  as an alternative we are using a RFID system in case the voter is not able to enroll his/her fingerprint for authentication.
+   The fingerprint module stores the fingerprint templates and it also helps to check illegal votes and repetition of votes
+   with correct coding. In our proposed model the results are stored in the EVM (controller memory) itself.
+    The results can be viewed from the system itself when the voting process is over.
+</p>
+<br>
+<h2><em>WORKING METHODOLOGY</em></h2>
+<br>
+<ol type="A">
+  <li>DESIGN</li>
+  <p>In this paper we proposed a method which uses fingerprint and RFID number as a means of authentication for the enrollment
+     of voters. The voter enrolls their fingerprints for authentication where the RFID is a means of alternative authentication
+     for the voters when the voters are unable to enroll their fingerprint due to some reasons.
+Usually the election process starts by enrollment process where the user enrolls their fingerprint as an identity proof.
+The RFID cards are enrolled beforehand so that it can be provided directly to the voters who are unable to enroll their
+ fingerprint.  After getting successfully enrolled the voters identity are matched with the previously enrolled identity
+ at the time of casting vote, if there is a match then the voters are allowed to cast their vote. The verification of user
+  identity proof, that helps the voters to know that whether the particular voter can give their vote in that area or not.
+When this verification happens manually it takes too much time. If the voter’s data is correctly loaded in the system then
+the voter can cast their vote. The manual checking can be eliminated totally, as the system will verify authorized RFID number
+ and fingerprints authentication before he/she is going to cast their vote. For the verification and to cast their vote voter
+  needs to provide their fingerprint after selecting an ID for their fingerprint. The system will not proceed to voting process
+   unless the fingerprint is correct and which is found in the database of that system. If not pertaining to that polling booth,
+    the rejection is indicated on the LCD. Once the voter Fingerprint is provided the authentication is done and the user can
+    cast his/her vote. When the voter tries to cast multiple votes the system will check whether the voter has casted his/her
+    vote earlier or not, if yes the voter is not allowed to cast his/her vote again, which is indicated by the LCD. </p>
+  <li>METHODOLOGY</li>
+  <p>The proposed method uses a finger print module named R305 which can scan and store finger prints up to few hundred
+    and the same can be transferred to database if the storage for finger prints is not enough within the module.
+     The moduleworkswith the concept of optical scanning with the wave length of light in the range 6897 to 25,000 nanometers.
+     The module can be able to do two different ways of searching 1:1 and 1:Ns searching by sending respective commands.
+     The fingerprint module is interfaced with the microcontroller using USART communication.
+     The system will undergo three different operation. <br>They are
+    <ol type="a">
+      <li>Enrolling</li>
+      <li>Authentication and voting</li>
+      <li> Result announcement.</li>
+    </ol>
+    <br>
+
+Before undergoing any operations the user has to select a mode of operation which is if the user wants to enroll new voters then the STANDBY mode has to be selected and if the user wants to start the voting process then the VOTING MODE has to be selected.
+<br><br>
+If STANDBY MODE selected:-<br><br>
+
+1)	Enrollment :  When the mode selected is STAND BY MODE the user is enabled to enroll new voters into the system.
+ To do so the user has to press ENROLL button on the system followed by selection of ID for storing the fingerprint using
+  UP/DOWN and OK keys.
+After selecting the ID the voter is asked to place his/her finger on the scanner twice so that the finger print can be stored
+ as an authentication for that voter. If the scan is successful the voter gets enrolled and if not then the voter has to follow
+  the above steps again to get enrolled.
+In this proposed model we are using RFID as an alternative for the fingerprint for those persons who are unable to enroll
+ through finger print. For the alternative purpose we are enrolling the RFID cards directly through code so that it can
+ be provided to the voters who are differently abled directly at the time of voting.
+<br><br>
+If VOTING MODE selected:-
+<br><br>
+
+     2) Authentication and Voting Mode:  When VOTING MODE is selected the voting process starts. To cast their votes the voter
+      has to select a identification method through which he wants to check his/her authentication.
+If a voter selects to check his/her authentication using the RFID card then the voter has to scan the card on the EM-18 reader
+ module. Then the system checks is the card scanned is enrolled to the system or not. If the card scanned is present in the
+  system then it further checks if the voter has already placed his/her vote or not, if the voter has not voted already then
+   the voter is asked to place their vote using the re-elected keys for the candidate and if the voter has already voted then
+    the LCD displays “already voted” on it.
+
+If a voter selects to check his/her authentication using the fingerprint then the voter has to press match key and then
+scan his/her finger on the scanner for authentication. The voter is provided with three chances to scan their fingerprint.
+If the scan is successful the system checks if the fingerprint is enrolled to the system or not. If the fingerprint is enrolled
+then the system further checks if the voter has already voted or not, if not then the voter is eligible to cast the vote using
+the re-elected keys provided for the candidates. If the voter has already voted then the LCD displays “already voted” on it.
+<br><br>
+3) Result Announcement mode: After the voting process is over the mode switch is again toggled to STANDBY MODE to announce
+the results. Once the result mode is activated the system displays the number of votes acquired by each individual candidate
+ and also declares the winner of the election.
+After displaying the results on the LCD the system uploads the voting data to a website which is password protected and which
+can be accessed only by the individuals holding the credentials to that site.
+</p>
+</ol>
+<br>
+<br>
+<h2><em>RESULT ANALYSIS - </em></h2>
+<br>
+<p>Fingerprint verification could also be an honest choice for in e-voting systems, where the system operates in a controlled
+  environment. The voting time is drastically reduced compared to existing methods. The voting time for a voter is reduced to
+  5 to 10 seconds as the system is able to perform authentication and voting process at the same time.
+In this proposed method the voters are enrolled in their respective regions using their finger print or RFID card as a means
+ of authentication. These individual machines are going to serve in their designated polling booths.
+Here the enrolled fingerprint or the RFID card number is checked by the system for the eligibility of the voter to cast his/her
+ vote. If the voter is authorized then the voter is allowed to cast his/her voter to their selected candidate by using the
+ re-elected keys. The system doesn’t allow multiple votes or invalid votes at the time of elections.
+</p>
+<br><br>
+<h2><em>CONCLUSION - </em></h2>
+<br>
+<p>The project “Biometric Based Voting Machine” was mainly intended to develop a fingerprint and RFID based advanced
+  Electronic Voting Machine (EVM) which helps in free and fair way of conducting elections. The system allows only
+  authenticated voting than the existing equipment as the person is identified based on his Fingerprint which is unique
+  to each individual. The inclusion of RFID system makes the project more robust by providing an alternate in case a voter
+  is unable to enroll by fingerprint. It is time conscious, less time required for voting & counting and it avoids invalid
+  voting as it prevents unregistered voters from voting. It is ease to transport due to its compact size.
+
+
+  </body>
+</html>
